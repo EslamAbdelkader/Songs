@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:layout_marginBottom="@dimen/image_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/default_padding"
+        android:paddingStart="@dimen/default_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleLabel"
+                style="@style/label_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titleLabel" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/titleLabel"
+                android:layout_toEndOf="@+id/titleLabel"
+                android:textSize="@dimen/info_text_size"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/separator_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height"
+                android:layout_below="@id/title"
+                android:background="@color/separator_color" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/artistLabel"
+                style="@style/label_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artistLabel" />
+
+            <TextView
+                android:id="@+id/artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/artistLabel"
+                android:layout_toEndOf="@id/artistLabel"
+                android:textSize="@dimen/info_text_size"
+                android:textStyle="bold" />
+
+            <View
+                style="@style/separator_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_height" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/typeLabel"
+                style="@style/label_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/typeLabel" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/typeLabel"
+                android:layout_toEndOf="@id/typeLabel"
+                android:textSize="@dimen/info_text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
