@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:paddingEnd="@dimen/default_padding"
     android:paddingStart="@dimen/default_padding"
-    android:paddingEnd="@dimen/default_padding">
+    android:layout_gravity="center_vertical">
 
-    <TextView
-        android:id="@+id/title"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/row_image_size"
+        android:layout_height="@dimen/row_image_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/default_padding"/>
+
+    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="@dimen/row_title_text_size"/>
+        android:layout_toEndOf="@id/imageView"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/artist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/row_artist_text_size"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/row_title_text_size"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/row_type_text_size"/>
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/row_artist_text_size" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/row_type_text_size" />
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/row_separator_height"
-        android:background="@color/black"
+        android:layout_below="@id/container"
+        android:layout_marginBottom="@dimen/separator_margin"
         android:layout_marginTop="@dimen/separator_margin"
-        android:layout_marginBottom="@dimen/separator_margin"/>
-
-</LinearLayout>
+        android:background="@color/black" />
+</RelativeLayout>

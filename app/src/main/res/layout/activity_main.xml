@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingStart="@dimen/default_padding"
+        android:paddingStart="@dimen/edit_text_padding"
         android:paddingEnd="@dimen/default_padding">
 
         <EditText
