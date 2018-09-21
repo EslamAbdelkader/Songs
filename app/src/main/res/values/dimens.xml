@@ -13,4 +13,5 @@
     <dimen name="row_separator_height">0.5dp</dimen>
     <dimen name="label_margin">4dp</dimen>
     <dimen name="search_button_padding">4dp</dimen>
+    <dimen name="edit_text_padding">4dp</dimen>
 </resources>
