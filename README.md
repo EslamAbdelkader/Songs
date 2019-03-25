@@ -1,2 +1,2 @@
 # Songs
-Songs client, for fetching and searching data about songs.
+Android client for fetching and searching data about songs
